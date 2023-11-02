@@ -14,21 +14,8 @@ public class Chest : Collectable
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
-            GameManager.instance.ShowText("+" + pesosAmount + "coins!", 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
+            GameManager.instance.coins += pesosAmount;
+            GameManager.instance.ShowText("+" + pesosAmount + "coins!", 25, Color.yellow, transform.position, Vector3.up * 25, 3.0f);
         }
     }
-
-
-    //    protected void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Player")
-    //    {
-    //        //collected = true;
-    //        GetComponent<SpriteRenderer>().sprite = emptyChest;
-    //        pesosAmount += 5;
-    //        // GetComponent<Animator>().enabled = true;
-    //        Debug.Log(pesosAmount.ToString());
-    //    }
-
-    //}
 }

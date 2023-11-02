@@ -13,6 +13,7 @@ public class Portal : Colidable
             // teleport the player
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
             SceneManager.LoadScene(sceneName);
+            GameObject.Find("Player").gameObject.transform.position = this.transform.position;
         }
     }
 }

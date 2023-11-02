@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - chess
+  - Fighter
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Blocking
-  - 
+  - Actor
   - 
   - 
   - 
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 3545886707
+    locked: 0
+  - name: weapon
+    uniqueID: 2376765125
     locked: 0
